@@ -1,0 +1,30 @@
+@model PaginaTec.Models.Opinion
+
+<div class="container mt-4">
+    <h1>Deja tu opinión</h1>
+    <p>Nos encantaría conocer tu experiencia con nuestros productos y servicios. Por favor, completa el siguiente formulario para enviarnos tus comentarios.</p>
+
+    <form asp-controller="Opinion" asp-action="Index" method="post">
+        <div class="mb-3">
+            <label for="nombre" class="form-label fw-semibold">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="Nombre" placeholder="Escribe tu nombre" required>
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="apellido" class="form-label fw-semibold">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" name="Apellido" placeholder="Escribe tu apellido" required>
+            <span asp-validation-for="Apellido" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="correo" class="form-label fw-semibold">Correo electrónico:</label>
+            <input type="email" class="form-control" id="correo" name="Correo" placeholder="Escribe tu correo electrónico" required>
+            <span asp-validation-for="Correo" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label fw-semibold">Opinion:</label>
+            <textarea class="form-control" id="mensaje" name="Mensaje" placeholder="Escribe tu mensaje" rows="4" required></textarea>
+            <span asp-validation-for="Mensaje" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar opinión</button>
+    </form>
+</div>

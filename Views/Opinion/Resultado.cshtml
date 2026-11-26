@@ -1,0 +1,9 @@
+@model PaginaTec.Models.Opinion
+
+<div class="container mt-4">
+    <div class="alert alert-success">
+        <h2 class="mb-0">Gracias por tu opinion! @Model.Nombre</h2>
+    </div>
+
+    <a asp asp-controller="Opinion" asp-action="Index" class="btn btn-outline mt-3">Volver al formulario</a>
+</div>

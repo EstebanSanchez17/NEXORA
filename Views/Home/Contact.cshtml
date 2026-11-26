@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Contacto";
+}
+<h1>@ViewData["Title"]</h1>
+
+<section id="Contacto" class="mb-5">
+    <div class="card shadow-sm border-light-subtle">
+        <div class="card-body">
+            <h2 class="card-title h4">Contacto</h2>
+            <form action="contacto" method="post">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label fw-semibold">Nombre completo:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" requir
+                    <label for="email" class="form-label fw-semibold mt-3">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@email.com" requir
+                    <label for="telefono" class="form-label fw-semibold mt-3">Teléfono:</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Número de teléfono" required>
+                </div>
+             </form>
+        </div>
+    </div><br>
+    <a href="#" class="btn btn-primary mb-4">Enviar</a>
+</section>
